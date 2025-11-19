@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Locator</title>
+    <link rel="stylesheet" href="styling/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <img src="./images/tee.webp" alt="my web logo" class="logo" width="80" height="55">
+
+   <!-- Navigation -->
+    <nav>
+        <a href="Home.html"><i class="fas fa-home"></i> Home</a>
+        <a href="Catalog.html"><i class="fas fa-th-list"></i> Catalog</a>
+        <a href="Storelocator.html"><i class="fas fa-store"></i> Store Locator</a>
+        <a href="Blog.html"><i class="fas fa-blog"></i> Blog</a>
+        <a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="Loyalty.html"><i class="fas fa-star"></i> Loyalty</a>
+        <a href="Cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+        <a href="Checkout.html"><i class="fas fa-credit-card"></i> Checkout</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Search Stores</h2>
+
+            <form id="store-form">
+                <label for="province">Select province:</label>
+                <select id="province" required>
+                    <option value="">Choose a province</option>
+                    <option value="Gauteng">Gauteng</option>
+                    <option value="Western Cape">Western Cape</option>
+                    <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                    <option value="Limpopo">Limpopo</option>
+                    <option value="Mpumalanga">Mpumalanga</option>
+                    <option value="North West">North West</option>
+                    <option value="Northern Cape">Northern Cape</option>
+                </select>
+
+                <button type="submit">Find</button>
+            </form>
+
+            <div id="store-results"></div>
+
+            <h2>The stores of Smart"Tee" Devices in South Africa</h2>
+
+            <ul>
+                <li>
+                    <strong>Johannesburg</strong><br>
+                    3900 Mountain Zebra Street, Boksburg<br>
+                    Phone: +27 163 671 949
+                </li>
+
+                <li>
+                    <strong>Cape Town</strong><br>
+                    45 Innovation Road, City Bowl<br>
+                    Phone: +27 284 129 568
+                </li>
+
+                <li>
+                    <strong>Durban</strong><br>
+                    78 Coastal Avenue, Umhlanga<br>
+                    Phone: +27 375 789 034
+                </li>
+
+                <li>
+                    <strong>Polokwane</strong><br>
+                    56 Market Road, Tzaneen<br>
+                    Phone: +27 159 824 106
+                </li>
+
+                <li>
+                    <strong>Mbombela</strong><br>
+                    34 Riverside Mall<br>
+                    Phone: +27 137 098 271
+                </li>
+
+                <li>
+                    <strong>North West</strong><br>
+                    67 Platinum Plaza, Rustenburg<br>
+                    Phone: +27 147 301 689
+                </li>
+
+                <li>
+                    <strong>Northern Cape</strong><br>
+                    21 Diamond Street, Kimberley<br>
+                    Phone: +27 530 280 451
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Smart"Tee" Devices</p>
+        <p>Follow us:<br>
+            <a href="https://facebook.com" target="blank"><i class="fab fa-facebook"></i>Facebook</a><br>
+            <a href="https://twitter.com" target="blank"><i class="fab fa-twitter"></i>Twitter</a><br>
+            <a href="https://instagram.com" target="blank"><i class="fab fa-instagram"></i>Instagram</a>
+        </p>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+
+</body>
+</html>
