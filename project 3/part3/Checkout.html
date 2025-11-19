@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styling/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <img src="./images/tee.webp" alt="Website Logo" class="logo" width="80" height="55">
+    
+<!-- Navigation -->
+    <nav>
+        <a href="Home.html"><i class="fas fa-home"></i> Home</a>
+        <a href="Catalog.html"><i class="fas fa-th-list"></i> Catalog</a>
+        <a href="Storelocator.html"><i class="fas fa-store"></i> Store Locator</a>
+        <a href="Blog.html"><i class="fas fa-blog"></i> Blog</a>
+        <a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="Loyalty.html"><i class="fas fa-star"></i> Loyalty</a>
+        <a href="Cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+        <a href="Checkout.html"><i class="fas fa-credit-card"></i> Checkout</a>
+    </nav>
+
+
+    <form id="checkout-form" action="/place-order" method="post">
+
+        <!-- CONTACT INFORMATION -->
+        <section>
+            <h2>Contact Information</h2>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Mobile Number</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+27 76 321 7681" required><br><br>
+        </section>
+
+        <!-- PERSONAL INFORMATION -->
+        <section>
+            <h2>Personal Information</h2>
+
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lname" required><br><br>
+
+            <label for="address">Address</label><br>
+            <input type="text" id="address" name="address" required><br><br>
+
+            <label for="city">City</label><br>
+            <input type="text" id="city" name="city" required><br><br>
+
+            <label for="province">Select Province</label><br>
+            <select name="province" id="province" required>
+                <option value="">Choose a province</option>
+                <option>Limpopo</option>
+                <option>Gauteng</option>
+                <option>North West</option>
+                <option>Western Cape</option>
+                <option>Free State</option>
+                <option>Northern Cape</option>
+                <option>Mpumalanga</option>
+                <option>KwaZulu-Natal</option>
+                <option>Eastern Cape</option>
+            </select><br><br>
+
+            <label for="postal">Postal Code</label><br>
+            <input type="text" id="postal" name="postal" required><br><br>
+        </section>
+
+        <!-- DELIVERY METHOD -->
+        <section>
+            <h2>Delivery Method</h2>
+
+            <label><input type="radio" name="delivery" value="standard" required> Standard courier (2–5 days) – R65</label><br>
+            <label><input type="radio" name="delivery" value="next-day"> Next-day courier (1–2 days) – R130</label><br>
+            <label><input type="radio" name="delivery" value="pickup"> Click & Collect (Free)</label><br><br>
+        </section>
+
+        <!-- PAYMENT METHOD -->
+        <section>
+            <h2>Payment Method</h2>
+
+            <label><input type="radio" name="payment" value="payfast" required> PayFast</label><br>
+            <label><input type="radio" name="payment" value="snapscan"> SnapScan</label><br>
+            <label><input type="radio" name="payment" value="card"> Debit/Credit Card</label><br><br>
+        </section>
+
+      <!-- ORDER SUMMARY -->
+<section>
+    <h2>Order Summary</h2>
+
+    <table border="1" width="100%" cellpadding="5">
+        <thead>
+            <tr>
+                <th align="left">Item</th>
+                <th align="right">Qty</th>
+                <th align="right">Price</th>
+                <th align="right">Total</th>
+            </tr>
+        </thead>
+
+        <tbody id="checkout-items">
+            <!-- JS will load items here -->
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3" align="right"><strong>Subtotal</strong></td>
+                <td align="right"><strong id="subtotal">R0</strong></td>
+            </tr>
+
+            <tr>
+                <td colspan="3" align="right"><strong>VAT (15%)</strong></td>
+                <td align="right"><strong id="vat">R0</strong></td>
+            </tr>
+
+            <tr>
+                <td colspan="3" align="right"><strong>Delivery Fee</strong></td>
+                <td align="right"><strong id="delivery-fee">R0</strong></td>
+            </tr>
+
+            <tr>
+                <td colspan="3" align="right"><strong>Grand Total</strong></td>
+                <td align="right"><strong id="grand-total">R0</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+</form>
+
+    <button type="submit" form="checkout-form">Place Order</button>
+
+    <!-- footer -->
+            <footer>
+                <p>&copy; 2025 Smart"Tee"devices</p>
+              <p>follow us:<br>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </p>
+                </footer>
+<script src="javascript/script.js"></script>
+</body>
+</html>

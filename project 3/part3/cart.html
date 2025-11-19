@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart</title>
+  
+  <!-- Logo should be inside body, not head -->
+  <link rel="stylesheet" href="styling/index.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Logo -->
+  <img src="./images/tee.webp" alt="Website logo" class="logo" width="80" height="55" />
+ 
+     
+   <!-- Navigation -->
+    <nav>
+        <a href="Home.html"><i class="fas fa-home"></i> Home</a>
+        <a href="Catalog.html"><i class="fas fa-th-list"></i> Catalog</a>
+        <a href="Storelocator.html"><i class="fas fa-store"></i> Store Locator</a>
+        <a href="Blog.html"><i class="fas fa-blog"></i> Blog</a>
+        <a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="Loyalty.html"><i class="fas fa-star"></i> Loyalty</a>
+        <a href="Cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+        <a href="Checkout.html"><i class="fas fa-credit-card"></i> Checkout</a>
+    </nav>
+
+
+  <header>
+    <h1>Your Shopping Cart</h1>
+  </header>
+
+  <section id="cart">
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Cart items will go here -->
+      </tbody>
+    </table>
+  </section>
+
+  <section id="cart-summary">
+    <h3>Cart Summary</h3>
+    <p id="total-price">Total: R0.00</p>
+    <button id="checkout-btn">Proceed to Checkout</button>
+  </section>
+  <!-- footer -->
+            <footer>
+                <p>&copy; 2025 Smart"Tee"devices</p>
+              <p>follow us:<br>
+            <a href="https://facebook.com"target="blank"><i class="fab fa-facebook"></i>facebook</a><br>
+             <a href="https://twitter.com"target="blank"><i class="fab fa-twitter"></i>twitter</a><br>
+             <a href="https://instagram.com"target="blank"><i class="fab fa-instagram"></i>instagram</a><br>
+         </p>
+             </footer>
+
+<script src="javascript/script.js"></script>
+  
+</body>
+</html>
